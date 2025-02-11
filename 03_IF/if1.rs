@@ -6,13 +6,13 @@ fn bigger(a: i32, b: i32) -> i32 {
     // - additional variables
     if a > b {
         println!("a is bigger");
-        return a;
+        a
     } else if b > a {
         println!("b is bigger");
-        return b;
+        b
     } else {
         println!("both numbers are equal");
-        return a;
+        a
     }
 }
 
