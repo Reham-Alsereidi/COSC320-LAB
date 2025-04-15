@@ -17,13 +17,13 @@ enum List {
 }
 
 // TODO: Create an empty cons list.
-fn create_empty_list() -> List {
-    todo!()
+fn create_empty_list<'a>()-> List<'a> {
+    List::Nil
 }
 
 // TODO: Create a non-empty cons list.
-fn create_non_empty_list() -> List {
-    todo!()
+fn create_non_empty_list<'a>() -> List<'a> {
+    List::Cons(1,&List::Nil)
 }
 
 fn main() {
